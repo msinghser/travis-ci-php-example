@@ -15,7 +15,7 @@ php:
   - 5.5
 
 # optionally specify a list of environments, for example to test different RDBMS
-
+script: phpunit --configuration phpunit_$DB.xml --coverage-text
 # configure notifications (email, IRC, campfire etc)
 notifications:
   irc: "mani@creativeindia.net.in"
