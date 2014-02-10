@@ -19,12 +19,8 @@ before_script:
 # optionally specify a list of environments, for example to test different RDBMS
 script: phpunit --configuration phpunit_$DB.xml --coverage-text
 
-global:
-    - "FTP_USER=test@checkdemo.com"
-    - "FTP_PASSWORD=Cc.7dhtr7"
-
 after_success:
-    "wget -r ftp://ftp.checkdemo.com/ --user $FTP_USER --password $FTP_PASSWORD"
+    "wget -r ftp://ftp.checkdemo.com/ --user test@checkdemo.com --password Cc.7dhtr7"
 # configure notifications (email, IRC, campfire etc)
 notifications:
   irc: "mani@creativeindia.net.in"
