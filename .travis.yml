@@ -15,14 +15,7 @@ php:
   - 5.5
 
 # optionally specify a list of environments, for example to test different RDBMS
-env:
-#DB=mysql
-  global:
-    - "FTP_USER=test@checkdemo.com"
-    - "FTP_PASSWORD=Cc.7dhtr7"
 
-  after_success:
-    "wget -r ftp://checkdemo.com/ --user $FTP_USER --password $FTP_PASSWORD"
 # configure notifications (email, IRC, campfire etc)
 notifications:
   irc: "mani@creativeindia.net.in"
