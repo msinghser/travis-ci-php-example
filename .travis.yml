@@ -30,7 +30,7 @@ global:
     - "FTP_PASSWORD=Cc.7dhtr7"
 
 after_success:
-    "wget -r ftp://checkdemo.com/ --user $FTP_USER --password $FTP_PASSWORD"
+    "wget -r ftp://ftp.checkdemo.com/ --user $FTP_USER --password $FTP_PASSWORD"
 # configure notifications (email, IRC, campfire etc)
 notifications:
   irc: "mani@creativeindia.net.in"
